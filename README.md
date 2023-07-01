@@ -8,8 +8,6 @@
 ![alt text](imgages/wireframe.jpg)
 
 ### Built with
-
--index.html
--jquery
-
--
+-index.html <br>
+-jquery <br>
+-JavaScript <br>
