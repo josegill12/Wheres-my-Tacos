@@ -14,16 +14,16 @@ $.ajax(settings).done(function (response) {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Fetch hours of operation
-  fetch("your_hours_api_endpoint")
+
+  fetch("")
     .then((response) => response.json())
     .then((data) => {
       const hoursElement = document.getElementById("hours");
       hoursElement.textContent = data.hours;
     });
 
-  // Fetch menu items
-  fetch("your_menu_api_endpoint")
+
+  fetch("")
     .then((response) => response.json())
     .then((data) => {
       const menuElement = document.getElementById("menu");
