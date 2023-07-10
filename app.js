@@ -1,3 +1,4 @@
+$searchQuery = $("#truckNameInput");
 const settings = {
   method: "GET",
   headers: {
@@ -12,7 +13,15 @@ function runAPIs() {
   fetch(api1Url, settings)
     .then((response) => response.json())
     .then((data) => {
-      console.log("API 1 Response:", data);
+      console.log(data);
+      const results = data.data.filter((tacoObj) => {
+        console.log(tacoObj.name);
+        console.log($searchQuery.val());
+        return tacoObj.name
+          .toLowerCase()
+          .includes($searchQuery.val().toLowerCase());
+      });
+      console.log("API 1 Response:", results);
     })
     .catch((error) => {
       console.error("API 1 Error:", error);
@@ -22,6 +31,5 @@ function runAPIs() {
 function handleButtonClick(params) {
   const truckName = document.getElementById("truckNameInput").value;
   console.log("Truck Name:", truckName);
+  runAPIs();
 }
-
-runAPIs();
