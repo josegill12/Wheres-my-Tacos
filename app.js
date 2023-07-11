@@ -22,16 +22,20 @@ function runAPIs() {
           .includes($searchQuery.val().toLowerCase());
       });
       console.log("API 1 Response:", results);
+      if (results.length > 0) {
+        const container = document.getElementById("imageContainer");
+        const image = document.createElement("img");
+        image.src =
+          "https://tacodelvalle.com/wp-content/uploads/2021/08/IMG_1609-3-1024x850.jpg";
+        container.appendChild(image);
+      }
     })
     .catch((error) => {
       console.error("API 1 Error:", error);
     });
 }
-const container = document.getElementById("imageContainer");
-const image = document.createElement("img");
-image.src =
-  "https://tacodelvalle.com/wp-content/uploads/2021/08/IMG_1609-3-1024x850.jpg";
-function handleButtonClick(params) {
+
+function handleButtonClick() {
   const truckName = document.getElementById("truckNameInput").value;
   console.log("Truck Name:", truckName);
   runAPIs();
