@@ -8,7 +8,10 @@
 ![alt text](imgages/wireframe.jpg)
 
 ### Built with
+
 -index.html <br>
 -jquery <br>
 -JavaScript <br>
+
 - Fetch <br>
+- A little bit of CSS <br>
