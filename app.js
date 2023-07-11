@@ -35,7 +35,7 @@ function runAPIs() {
     });
 }
 
-function handleButtonClick() {
+function handleButtonClick(image) {
   const truckName = document.getElementById("truckNameInput").value;
   console.log("Truck Name:", truckName);
   runAPIs();
