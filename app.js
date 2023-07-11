@@ -28,6 +28,7 @@ function runAPIs() {
     });
 }
 const container = document.getElementById("imageContainer");
+const image = document.createElement("img");
 image.src =
   "https://tacodelvalle.com/wp-content/uploads/2021/08/IMG_1609-3-1024x850.jpg";
 function handleButtonClick(params) {
