@@ -27,7 +27,9 @@ function runAPIs() {
       console.error("API 1 Error:", error);
     });
 }
-
+const container = document.getElementById("imageContainer");
+image.src =
+  "https://tacodelvalle.com/wp-content/uploads/2021/08/IMG_1609-3-1024x850.jpg";
 function handleButtonClick(params) {
   const truckName = document.getElementById("truckNameInput").value;
   console.log("Truck Name:", truckName);
